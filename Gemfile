@@ -9,7 +9,9 @@ gem 'sqlite3'
 gem 'rake'
 
 group :production do
-gem 'pg' end
+    gem 'pg' 
+end
+
 group :development do
     gem 'sqlite3'
 end
