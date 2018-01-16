@@ -6,3 +6,9 @@ end
 
 class History < ActiveRecord::Base
 end
+
+class Face < ActiveRecord::Base
+end
+
+class User < ActiveRecord::Base
+end

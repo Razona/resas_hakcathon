@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171118075442) do
+ActiveRecord::Schema.define(version: 20171119020018) do
+
+  create_table "faces", force: :cascade do |t|
+    t.string "faceId"
+    t.integer "top"
+    t.integer "left"
+    t.integer "width"
+    t.integer "height"
+    t.integer "anger"
+    t.integer "contempt"
+    t.integer "disgust"
+    t.integer "fear"
+    t.integer "happiness"
+    t.integer "neutral"
+    t.integer "sadness"
+    t.integer "surprise"
+  end
 
   create_table "histories", force: :cascade do |t|
     t.float "lat"
@@ -18,6 +34,15 @@ ActiveRecord::Schema.define(version: 20171118075442) do
     t.string "kuriId"
     t.string "userId"
     t.string "date"
+    t.integer "postTimes"
+    t.integer "kuriValue", default: 1
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.integer "kuriValue", default: 0
+    t.string "userId"
+    t.float "lat"
+    t.float "lon"
   end
 
 end
