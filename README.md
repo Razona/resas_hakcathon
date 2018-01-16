@@ -1,1 +1,2 @@
-Life is Tech ! の教材で利用する `Sinatra` テンプレートです。
+RESASハッカソン2017 in 東京 ～IoTで創る東京のミライ～ 
+チーム栗
